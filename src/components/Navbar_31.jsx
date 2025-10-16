@@ -13,7 +13,7 @@ const Navbar_31 = () => {
         </div>
         <div className="header-right">
           <ul className="main-menu">
-            <li className="menu-item"><Link to="#" className="active">Home</Link></li>
+            <li className="menu-item"><Link to="/" className="active">Home</Link></li>
 
             <li className="menu-item mega-menu">
               <Link to="#">Mega menu +</Link>
