@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router';
 
-import { HomeLayoutPage_31, HomePage_31, BlogStaticPage_31, BlogLocalJsonPage_31, BlogNodePage_31 } from './pages';
+import { HomeLayoutPage_31, HomePage_31, BlogStaticPage_31, BlogLocalJsonPage_31, BlogNodePage_31, BookListPage_31, } from './pages';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: 'node_31',
         element: <BlogNodePage_31 />,
+      },
+      {
+        path: 'booklist_31',
+        element: <BookListPage_31 />,
       },
     ],
   },
