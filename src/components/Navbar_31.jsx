@@ -69,11 +69,20 @@ const Navbar_31 = () => {
                   <li className="menu-item"><Link to="/static_31">W3-BlogStatic_31</Link></li>
                   <li className="menu-item"><Link to="/localjson_31">W3-BlogLocalJson_31</Link></li>
                   <li className="menu-item"><Link to="/node_31">W4-BlogNode_31</Link></li>
-                  <li className="menu-item"><Link to="#">W5-BlogSupa_31</Link></li>
+                  <li className="menu-item"><Link to="#">W6-BlogSupa_31</Link></li>
+                  <li className="menu-item"><Link to="/localjson2_31">W7-BlogLocalJson2_31</Link></li>
                 </ul>
               </div>
             </li>
-            <li className="menu-item"><Link to="#">Blog</Link></li>
+            <li className="menu-item dropdown">
+              <Link to="#">Tutorials +</Link>
+              <div className="sub-menu-wrapper slideInUp">
+                <ul className="sub-menu">
+                  <li className="menu-item"><Link to="/tutorials/t11_31">T11_ErrorExamplePage_31</Link></li>
+                  <li className="menu-item"><Link to="/tutorials/t12_31">T12_UseStateBasicsPage_311</Link></li>
+                </ul>
+              </div>
+            </li>
             <li className="menu-item"><Link to="#">Contact</Link></li>
           </ul>
           <Link
@@ -135,13 +144,15 @@ const Navbar_31 = () => {
             </li>
 
             <li className="menu-item dropdown">
-              <Link to="#">Services +</Link>
-              <div className="sub-menu-wrapper">
+              <Link to="#">Demo +</Link>
+              <div className="sub-menu-wrapper slideInUp">
                 <ul className="sub-menu">
-                  <li className="menu-item"><Link to="#">Service 1</Link></li>
-                  <li className="menu-item"><Link to="#">Service 2</Link></li>
-                  <li className="menu-item"><Link to="#">Service 3</Link></li>
-                  <li className="menu-item"><Link to="#">Service 4</Link></li>
+                  <li className="menu-item"><Link to="/booklist_31">W2-BookList_31</Link></li>
+                  <li className="menu-item"><Link to="/static_31">W3-BlogStatic_31</Link></li>
+                  <li className="menu-item"><Link to="/localjson_31">W3-BlogLocalJson_31</Link></li>
+                  <li className="menu-item"><Link to="/node_31">W4-BlogNode_31</Link></li>
+                  <li className="menu-item"><Link to="#">W6-BlogSupa_31</Link></li>
+                  <li className="menu-item"><Link to="/localjson2_31">W7-BlogLocalJson2_31</Link></li>
                 </ul>
               </div>
             </li>

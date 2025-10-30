@@ -4,17 +4,20 @@ import { useState, useEffect } from 'react';
 import Blog_31 from '../components/Blog_31';
 import Wrapper from '../assets/wrappers/Blog2_31';
 
-const api_url = 'http://localhost:5000/api/blog_31';
+//const api_url = 'http://localhost:5000/api/blog_31';
 
-const BlogNodePage_31 = () => {
+import { supabase } from '../db/clientSupabase';
+
+const BlogSupaPage_31 = () => {
   const [name, setName] = useState('hang0727');
   const [id, setId] = useState(213417131);
   const [blogs_31, setBlogs_31] = useState([]);
 
 const fetchBlogFromNodeServer = async () => {
   try{
-    const response = await fetch(api_url);
-    const data = await response.json();
+    let {data, error} = await supabase.from('blog_31').select('*');
+    //const response = await fetch(api_url);
+    //const data = await response.json();
     console.log('blogs', data);
     setBlogs_31(data);
   }catch(error){
@@ -23,7 +26,7 @@ const fetchBlogFromNodeServer = async () => {
 };
 
 useEffect(()=>{
-  fetchBlogFromNodeServer();
+  fetchBlogFromSupa();
 },[]);
 
   return (
@@ -52,4 +55,4 @@ useEffect(()=>{
   );
 };
 
-export default BlogNodePage_31;
+export default BlogSupaPage_31;
